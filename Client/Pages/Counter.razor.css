@@ -1,0 +1,9 @@
+/* purgecss start ignore */
+.btn {
+  margin-left: 0px;
+  margin-right: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+}
+
+/* purgecss end ignore */
