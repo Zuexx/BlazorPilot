@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPiolt.Server", "Server\BlazorPiolt.Server.csproj", "{21C2B524-2DD9-4400-B211-51652774BD10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPiolt.Server", "Server\BlazorPiolt.Server.csproj", "{21C2B524-2DD9-4400-B211-51652774BD10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPiolt.Client", "Client\BlazorPiolt.Client.csproj", "{F84A3CEE-DBB6-4FF5-83C3-0116935153F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPiolt.Client", "Client\BlazorPiolt.Client.csproj", "{F84A3CEE-DBB6-4FF5-83C3-0116935153F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPiolt.Shared", "Shared\BlazorPiolt.Shared.csproj", "{35B3B170-76FD-41F5-8FFB-30806724D81F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPiolt.Shared", "Shared\BlazorPiolt.Shared.csproj", "{35B3B170-76FD-41F5-8FFB-30806724D81F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPilot.Application", "Application\BlazorPilot.Application.csproj", "{8EFD4CC2-D011-47A3-810E-561E8F035758}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{35B3B170-76FD-41F5-8FFB-30806724D81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35B3B170-76FD-41F5-8FFB-30806724D81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35B3B170-76FD-41F5-8FFB-30806724D81F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EFD4CC2-D011-47A3-810E-561E8F035758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EFD4CC2-D011-47A3-810E-561E8F035758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EFD4CC2-D011-47A3-810E-561E8F035758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EFD4CC2-D011-47A3-810E-561E8F035758}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
