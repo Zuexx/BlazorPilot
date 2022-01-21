@@ -1,13 +1,7 @@
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ["./**/*.html", "./**/*.razor"],
-  },
-  darkMode: false, // or 'media' or 'class'
+  mode: "jit",
+  content: ["./**/*.html", "./**/*.razor"],
   theme: {
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [],
