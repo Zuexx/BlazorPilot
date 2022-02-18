@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="yarn build" />
 	</Target>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shared\BlazorPiolt.Shared.csproj" />
+    <ProjectReference Include="..\Shared\BlazorPilot.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

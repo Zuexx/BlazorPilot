@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Client\BlazorPiolt.Client.csproj" />
-    <ProjectReference Include="..\Shared\BlazorPiolt.Shared.csproj" />
+    <ProjectReference Include="..\Client\BlazorPilot.Client.csproj" />
+    <ProjectReference Include="..\Shared\BlazorPilot.Shared.csproj" />
   </ItemGroup>
 
 

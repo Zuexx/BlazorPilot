@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Components;
-using BlazorPiolt.Shared;
+using BlazorPilot.Shared;
 using System.Net.Http.Json;
 
-namespace BlazorPiolt.Client.Pages
+namespace BlazorPilot.Client.Pages
 {
     public partial class FetchData:ComponentBase
     {

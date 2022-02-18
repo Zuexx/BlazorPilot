@@ -1,4 +1,4 @@
-namespace BlazorPiolt.Shared
+namespace BlazorPilot.Shared
 {
     public class WeatherForecast
     {

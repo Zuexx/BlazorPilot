@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPiolt.Server", "Server\BlazorPiolt.Server.csproj", "{21C2B524-2DD9-4400-B211-51652774BD10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPilot.Server", "Server\BlazorPilot.Server.csproj", "{21C2B524-2DD9-4400-B211-51652774BD10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPiolt.Client", "Client\BlazorPiolt.Client.csproj", "{F84A3CEE-DBB6-4FF5-83C3-0116935153F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPilot.Client", "Client\BlazorPilot.Client.csproj", "{F84A3CEE-DBB6-4FF5-83C3-0116935153F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPiolt.Shared", "Shared\BlazorPiolt.Shared.csproj", "{35B3B170-76FD-41F5-8FFB-30806724D81F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPilot.Shared", "Shared\BlazorPilot.Shared.csproj", "{35B3B170-76FD-41F5-8FFB-30806724D81F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

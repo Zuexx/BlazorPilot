@@ -1,6 +1,6 @@
 {
-  "name": "BlazorPiolt",
-  "short_name": "BlazorPiolt",
+  "name": "BlazorPilot",
+  "short_name": "BlazorPilot",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",

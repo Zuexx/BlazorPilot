@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using System.Collections;
 
-namespace BlazorPiolt.Client.Shared
+namespace BlazorPilot.Client.Shared
 {
     public partial class MainLayout : LayoutComponentBase
     {

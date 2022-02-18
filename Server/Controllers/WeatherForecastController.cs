@@ -1,7 +1,7 @@
-using BlazorPiolt.Shared;
+using BlazorPilot.Shared;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BlazorPiolt.Server.Controllers
+namespace BlazorPilot.Server.Controllers
 {
     [ApiController]
     [Route("[controller]")]
