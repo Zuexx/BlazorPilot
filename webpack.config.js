@@ -5,10 +5,33 @@ const path = require("path");
 const mode = process.env.NODE_ENV || "development";
 
 var getEntryInfo = (folder, file) => {
-  return {
-    entry: __dirname + "/Client/" + folder + "/" + file + ".razor.scss",
-    output: path.resolve(__dirname, "Client/" + folder),
-  };
+  if (file === "app")
+    return {
+      entry: __dirname + "/Client/" + folder + "/" + file + ".scss",
+      output: path.resolve(__dirname, "Client/" + folder),
+    };
+  else
+    return {
+      entry: __dirname + "/Client/" + folder + "/" + file + ".razor.scss",
+      output: path.resolve(__dirname, "Client/" + folder),
+    };
+};
+
+var generateConfigs = (componetsOfMap) => {
+  var entryObjectAssignConfigs = [];
+
+  componetsOfMap.forEach(function (value, key) {
+    var entryInfo = getEntryInfo(value, key);
+    entryObjectAssignConfigs.push(
+      Object.assign({}, config, {
+        name: key,
+        entry: [entryInfo.entry],
+        output: { path: entryInfo.output },
+      })
+    );
+  });
+
+  return entryObjectAssignConfigs;
 };
 
 var config = {
@@ -36,40 +59,13 @@ var config = {
   plugins: [new FixStyleOnlyEntriesPlugin()],
 };
 
-var appConfig = Object.assign({}, config, {
-  name: "App",
-  entry: [__dirname + "/Client/wwwroot/css/app.scss"],
-  output: { path: __dirname + "/Client/wwwroot/css/" },
-});
-
-var counterConfig = Object.assign({}, config, {
-  name: "Counter",
-  entry: [getEntryInfo("Pages", "Counter").entry],
-  output: { path: getEntryInfo("Pages", "Counter").output },
-});
-
-var fetchDataConfig = Object.assign({}, config, {
-  name: "Fetch Data",
-  entry: [getEntryInfo("Pages", "FetchData").entry],
-  output: { path: getEntryInfo("Pages", "FetchData").output },
-});
-
-var layoutConfig = Object.assign({}, config, {
-  name: "Layout",
-  entry: [getEntryInfo("Shared", "MainLayout").entry],
-  output: { path: getEntryInfo("Shared", "MainLayout").output },
-});
-
-var navMenuConfig = Object.assign({}, config, {
-  name: "NavMenu",
-  entry: [getEntryInfo("Shared", "NavMenu").entry],
-  output: { path: getEntryInfo("Shared", "NavMenu").output },
-});
-
-module.exports = [
-  appConfig,
-  counterConfig,
-  layoutConfig,
-  navMenuConfig,
-  fetchDataConfig,
+// Define the mapping component name and folder name
+const componentsArray = [
+  ["app", "wwwroot/css"],
+  ["Counter", "Pages"],
+  ["FetchData", "Pages"],
+  ["MainLayout", "Shared"],
+  ["NavMenu", "Shared"],
 ];
+
+module.exports = [generateConfigs(new Map(componentsArray))];
