@@ -1,4 +1,4 @@
-.nav-link-item {
+::deep .nav-link-item {
   border-radius: 0.375rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -11,14 +11,14 @@
   color: rgb(209 213 219/var(--tw-text-opacity));
 }
 
-.nav-link-item:hover {
+::deep .nav-link-item:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81/var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255/var(--tw-text-opacity));
 }
 
-.active {
+::deep .active {
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39/var(--tw-bg-opacity));
