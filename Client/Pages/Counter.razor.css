@@ -1,9 +1,17 @@
-/* purgecss start ignore */
 .btn {
-  margin-left: 0px;
-  margin-right: 0px;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+  background-color: rgb(6 182 212/var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity));
 }
 
-/* purgecss end ignore */
+.btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 116 144/var(--tw-bg-opacity));
+}

@@ -48,6 +48,12 @@ var counterConfig = Object.assign({}, config, {
   output: { path: getEntryInfo("Pages", "Counter").output },
 });
 
+var fetchDataConfig = Object.assign({}, config, {
+  name: "Fetch Data",
+  entry: [getEntryInfo("Pages", "FetchData").entry],
+  output: { path: getEntryInfo("Pages", "FetchData").output },
+});
+
 var layoutConfig = Object.assign({}, config, {
   name: "Layout",
   entry: [getEntryInfo("Shared", "MainLayout").entry],
@@ -60,4 +66,10 @@ var navMenuConfig = Object.assign({}, config, {
   output: { path: getEntryInfo("Shared", "NavMenu").output },
 });
 
-module.exports = [appConfig, counterConfig, layoutConfig, navMenuConfig];
+module.exports = [
+  appConfig,
+  counterConfig,
+  layoutConfig,
+  navMenuConfig,
+  fetchDataConfig,
+];

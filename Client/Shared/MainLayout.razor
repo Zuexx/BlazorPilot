@@ -1,17 +1,20 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<div class="min-h-full">
+
+  <NavMenu />
+
+  <header class="bg-white shadow">
+    <div class="max-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold text-gray-900">@_activeRoute</h1>
     </div>
+  </header>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+  <main>
+    <div class="max-w-full mx-auto py-6 sm:px-6 lg:px-8">
+      <!-- Replace with your content -->      
+      @Body
+      <!-- /End replace -->
+    </div>
+  </main>
 </div>

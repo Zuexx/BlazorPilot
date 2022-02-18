@@ -1,6 +1,4 @@
 ﻿@page "/fetchdata"
-@using BlazorPiolt.Shared
-@inject HttpClient Http
 
 <PageTitle>Weather forecast</PageTitle>
 
@@ -14,34 +12,25 @@
 }
 else
 {
-    <table class="table">
-        <thead>
+    <table class="table-wrapper">
+        <thead class="thead-wrapper">
             <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
+                <th class="thead-th">Date</th>
+                <th class="thead-th">Temp. (C)</th>
+                <th class="thead-th">Temp. (F)</th>
+                <th class="thead-th">Summary</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var forecast in forecasts)
             {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
+                <tr class="tbody-tr">
+                    <td class="tbody-td-first">@forecast.Date.ToShortDateString()</td>
+                    <td class="tbody-td">@forecast.TemperatureC</td>
+                    <td class="tbody-td">@forecast.TemperatureF</td>
+                    <td class="tbody-td">@forecast.Summary</td>
                 </tr>
             }
         </tbody>
     </table>
-}
-
-@code {
-    private WeatherForecast[]? forecasts;
-
-    protected override async Task OnInitializedAsync()
-    {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
-    }
 }
